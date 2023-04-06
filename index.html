@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Adarsh Pradhan</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="\css\styles.css">
-  </head>
-  <body>
+
+<head>
+  <title>Adarsh Pradhan</title>
+  <meta charset="UTF-8">
+  <script src="jquery-3.6.4.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="\css\styles.css">
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
+
+  <div id="myDiv">
+    
     <div class="container" style=padding:25px>
-      <img src="https://drive.google.com/uc?export=view&id=1gV8LWWi0vBvvllT-n-xeQCtYSNm6EzWo" alt="bg_img" style="width:100%;">
-      <div class="centered"><h1 style="font-size: 350%;">Adarsh Pradhan</h1></div>
+      <img src="https://drive.google.com/uc?export=view&id=1gV8LWWi0vBvvllT-n-xeQCtYSNm6EzWo" alt="bg_img"
+        style="width:100%;">
+      <div class="centered">
+        <h1 style="font-size: 350%;">Adarsh Pradhan</h1>
+      </div>
     </div>
 
     <div style="text-align:center;">
       <h1 style="font-size: 200%;">Yoroshiku onegai shimasu!</h1>
-    </div>    
-
+    </div>
 
     <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
-      <a href="https://www.linkedin.com/in/adarsh-pradhan-33305917b/"><i class="fa fa-linkedin w3-hover-opacity"></i></a> 
+      <a href="https://www.linkedin.com/in/adarsh-pradhan-33305917b/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
       <a href="https://www.instagram.com/dil_se_ssjg/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
       <a href="https://twitter.com/Adarsh4Pradhan"><i class="fa fa-twitter w3-hover-opacity"></i></a>
       <p>Powered by <br>
-        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> & 
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> &
         <a href="https://pages.github.com/" target="_blank" class="w3-hover-text-green">GitHub Pages</a>
       </p>
     </footer>
+  
+  </div>
 
-  </body>
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+
+</body>
+
 </html>
